@@ -727,7 +727,7 @@ function installOpenVPN() {
 
 		echo "set_var EASYRSA_REQ_CN $SERVER_CN" >>vars
 		echo "set_var EASYRSA_CA_EXPIRE 7300">>vars
-        echo "set_var EASYRSA_CERT_EXPIRE 3650">>var
+        echo "set_var EASYRSA_CERT_EXPIRE 3650">>vars
 
 		# Create the PKI, set up the CA, the DH params and the server certificate
 		./easyrsa init-pki
